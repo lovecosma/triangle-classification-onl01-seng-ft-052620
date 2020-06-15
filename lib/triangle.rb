@@ -24,7 +24,7 @@ elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
 elsif @side_a == 0 || @side_b == 0 || @side_c == 0
   begin
        raise TriangleError
-     rescue PartnerError => error
+     rescue TriangleError => error
          puts error.message
      end
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0

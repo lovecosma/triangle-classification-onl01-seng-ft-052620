@@ -31,6 +31,7 @@ class TriangleError < StandardError
   def message
     "you must give a proper side lengths for a legal triangle!"
   end
+end 
 
 end
 

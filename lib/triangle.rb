@@ -23,6 +23,7 @@ elsif @side_a == 0 || @side_b == 0 || @side_c == 0
   begin
   raise
 rescue TriangleError => error
+   puts error.message
   end
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0
   raise TriangleError

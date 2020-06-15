@@ -21,7 +21,7 @@ elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
   return :isosceles
 elsif @side_a == 0 || @side_b == 0 || @side_c == 0
   raise TriangleError
-elsif @side_a != Integer || @side_b != Integer || @side_c != Integer
+elsif @side_a == 0 || @side_b != Integer || @side_c != Integer
   raise TriangleError
 end
 end

@@ -22,8 +22,8 @@ elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
 elsif @side_a == 0 || @side_b == 0 || @side_c == 0
   begin
   raise
-rescue TriangleError
-end
+rescue TriangleError => error
+  end
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0
   raise TriangleError
 end

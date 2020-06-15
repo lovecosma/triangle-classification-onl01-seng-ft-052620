@@ -12,21 +12,17 @@ end
 
 def kind
 if @side_a == @side_b && @side_a == @side_c && @side_b == @side_c
- return :equilateral
+ :equilateral
 elsif @side_a != @side_b && @side_a != @side_c && @side_b != @side_c
-  return :scalene
+  :scalene
 elsif @side_a == @side_b && @side_a != @side_c && @side_b !=  @side_c
-  return :isosceles
+  :isosceles
 elsif @side_a == @side_c && @side_b != @side_a && @side_c != @side_b
-  return :isosceles
+  :isosceles
 elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
-  return :isosceles
+  :isosceles
 elsif @side_a == 0 || @side_b == 0 || @side_c == 0
-  begin
-       raise TriangleError
-     rescue TriangleError => error
-         puts error.message
-     end
+  
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0
 end
 end

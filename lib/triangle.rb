@@ -22,7 +22,7 @@ elsif @side_a == @side_c && @side_b != @side_a && @side_c != @side_b
 elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
   :isosceles
 elsif @side_a == 0 || @side_b == 0 || @side_c == 0
-  TriangleError
+  TriangleError.message
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0
   TriangleError
 end

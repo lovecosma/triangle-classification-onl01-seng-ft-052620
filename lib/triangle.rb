@@ -21,9 +21,8 @@ elsif @side_a == @side_c && @side_b != @side_a && @side_c != @side_b
   return :isosceles
 elsif @side_b == @side_c && @side_b != @side_a && @side_a != @side_c
   return :isosceles
-  binding.pry
 elsif @side_a == 0 && @side_b == 0 && @side_c == 0
-
+  raise TriangleError
 elsif @side_a < 0 || @side_b < 0 || @side_c <  0
 end
 end
